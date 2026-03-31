@@ -68,6 +68,19 @@ Cost-aware infrastructure design
 - Keycloak + SAML2AWS 기반 인증 구조와 IAM Role 중심 접근 제어 체계를 정리하여 보안성과 계정 운영 효율을 강화했습니다.
 - 운영 문서, 스크립트, 인수인계 자료를 체계화하여 협업 조직과 운영 담당자가 빠르게 대응할 수 있는 기반을 만들었습니다.
 
+## Featured Repositories
+
+- [aws-log-analysis-athena](https://github.com/royalsaves/aws-log-analysis-athena)  
+  Athena 기반 AWS 로그 분석 쿼리와 운영 메모
+- [observability-playbooks](https://github.com/royalsaves/observability-playbooks)  
+  Datadog, Grafana, Loki, Promtail 중심 운영 플레이북
+- [aws-ops-automation](https://github.com/royalsaves/aws-ops-automation)  
+  Lambda, EventBridge, Bash, Python 기반 운영 자동화 예제
+- [incident-response-runbooks](https://github.com/royalsaves/incident-response-runbooks)  
+  장애 대응 관점의 점검 절차와 운영 런북
+- [terraform-eks-structure-example](https://github.com/royalsaves/terraform-eks-structure-example)  
+  멀티 환경용 Terraform 구조 예시
+
 ## Working Style
 
 - 구조를 먼저 정리하고 자동화로 반복 작업을 줄입니다.
