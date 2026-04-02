@@ -29,8 +29,7 @@ AWS 기반 서비스 운영 환경에서 배포 표준화, 관측성 개선, 운
 - AWS 기반 인프라 운영, 배포 자동화, 관측성 체계 구축을 중심으로 실무를 수행해왔습니다.
 - ECS/ECR/Jenkins/GitHub Actions 기반의 배포 구조를 정비하고, 반복 운영 작업은 Lambda, EventBridge, Python, Shell로 자동화해왔습니다.
 - Datadog, Grafana, Loki, Promtail, OpenSearch, Athena를 활용해 로그, 메트릭, 트래픽을 연결해서 분석할 수 있는 운영 환경을 구축하고 운영했습니다.
-- IAM, SSO, VPN, 접근 제어, 로그 통합, 보안 운영 기준 정비 등 운영 보안성과 관리 효율을 함께 고려한 구조 개선에 익숙합니다.
-- 운영 영역에 머무르지 않고 비용 관리, 외부 솔루션 운영, 내부 플랫폼 고도화, 협업 워크플로우 개선까지 함께 다뤄왔습니다.
+- IAM, SSO, VPN, 접근 제어, 비용 관리, 외부 솔루션 운영, 내부 플랫폼 고도화까지 함께 다뤄왔습니다.
 
 ## Focus
 
@@ -55,42 +54,24 @@ AWS 기반 서비스 운영 환경에서 배포 표준화, 관측성 개선, 운
 - CloudWatch Logs Insights
 - ELB / CloudFront / VPC / Application log analysis
 
-### Automation & IaC
-- Terraform
-- Jenkins
-- GitHub / GitHub Actions
+### Automation & Platform
+- Terraform / Jenkins / GitHub Actions / Ansible
 - AWS CLI / Bash / Python
-- Ansible
-
-### Internal Platform & Open Source
-- Keycloak
-- SonarQube
-- SAML / IAM Role-based access control
+- Keycloak / SonarQube
 - Slack bot / Workflow integration
 
 ## What I’ve Done
 
+- 기존 모놀리식 서비스를 ECS 기반 MSA 구조로 전환하고 WEB/WAS 아키텍처를 분리했으며, CloudFront와 캐싱 전략을 적용해 가용성과 서비스 응답 효율을 높였습니다.
 - ECS, ECR, Jenkins, GitHub Actions 기반 서비스 배포 구조를 표준화하고 운영 자동화를 통해 배포 안정성과 운영 효율을 개선했습니다.
 - GitOps와 워크플로우 기반 운영 방식을 정리하여 변경 이력, 승인 흐름, 배포 절차가 분리되지 않도록 운영 구조를 고도화했습니다.
 - Athena + S3 기반으로 ALB, ELB, CloudFront 로그 분석 체계를 구성하여 운영 지표와 트래픽 분석 환경을 구축했습니다.
 - Datadog, Grafana, Loki, Promtail 기반 모니터링 및 로그 수집 체계를 정비하여 장애 대응 속도와 운영 가시성을 높였습니다.
 - Lambda, EventBridge 기반으로 EC2 상태 감지, ASG 이벤트 감지, 리소스 점검 등 반복 운영 작업을 자동화했습니다.
-- Slack bot과 승인 워크플로우를 연계해 ChatOps 방식의 운영 프로세스를 정리하고, 확인·승인·전달과 같은 반복 업무를 더 빠르고 일관되게 처리할 수 있도록 개선했습니다.
+- Slack bot과 승인 워크플로우를 연계해 ChatOps 방식의 운영 프로세스를 정리하고, 반복 업무를 더 빠르고 일관되게 처리할 수 있도록 개선했습니다.
 - Keycloak, SonarQube 등 오픈소스 플랫폼을 활용해 인증, 접근 제어, 품질 관리 등 내부 운영 체계를 고도화했습니다.
-- Keycloak + SAML2AWS 기반 인증 구조와 IAM Role 중심 접근 제어 체계를 정리하여 보안성과 계정 운영 효율을 강화했습니다.
 - AWS 비용 관리 및 최적화, Datadog과 같은 외부 솔루션 운영, MSP 계약 관련 실무를 함께 수행하며 기술 운영뿐 아니라 비용과 서비스 지속 가능성까지 고려해 왔습니다.
-- 운영 문서, 스크립트, 인수인계 자료를 체계화하여 협업 조직과 운영 담당자가 빠르게 대응할 수 있는 기반을 만들었습니다.
 - Bedrock을 활용해 운영 데이터, 문서, 로그, 이벤트 정보를 정리하고 분석하는 흐름을 검토·적용하며, AIOps 관점의 활용 가능성을 실무에 연결해왔습니다.
-
-## Areas of Improvement I Usually Drive
-
-- 배포 구조 표준화 및 재사용성 개선
-- 운영 자동화와 수작업 제거
-- 메트릭, 로그, 이벤트 기반 원인 분석 환경 정비
-- 비용 최적화와 외부 솔루션 운영 효율화
-- 인증, 권한, 접근 제어 체계 개선
-- 협업 승인 흐름의 ChatOps 전환
-- AI 활용 운영 분석 체계 정리
 
 ## Working Style
 
@@ -99,25 +80,13 @@ AWS 기반 서비스 운영 환경에서 배포 표준화, 관측성 개선, 운
 - 운영, 보안, 비용, 협업 흐름이 따로 놀지 않도록 연결된 구조를 선호합니다.
 - 운영자가 덜 불안하고, 장애 원인을 더 빨리 찾을 수 있는 시스템을 만드는 데 집중합니다.
 
-## Notes
+## This Profile
 
-- This profile is focused on AWS platform operations, observability, deployment reliability, workflow automation, and internal platform improvement.
-- Selected public write-ups, reusable operational patterns, and portfolio materials will be organized here over time.
-
-## Currently Building
-
-- 더 읽기 쉬운 운영 문서와 인수인계 구조
-- 더 재사용 가능한 배포 및 승인 워크플로우
-- 더 빠르게 원인을 설명할 수 있는 관측 환경
-- 운영 데이터를 더 실용적으로 활용할 수 있는 AI 기반 분석 흐름
-
-## Planned Public Repositories
-
-- AWS 운영 자동화 스크립트
-- 로그 분석 및 Athena 쿼리 예시
-- 관측성 및 모니터링 운영 정리
-- GitHub Actions / Slack 기반 워크플로우 예시
-- 내부 플랫폼 고도화 관련 기술 정리
+- AWS 기반 플랫폼 운영
+- 관측성 및 로그 분석 체계
+- 배포 안정성과 운영 자동화
+- 내부 플랫폼 고도화와 협업 워크플로우 개선
+- 공개 가능한 운영 사례와 기술 정리
 
 ---
 
